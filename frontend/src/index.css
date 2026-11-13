@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -146,26 +149,45 @@ code {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
 
 :root {
   font-family: 'Vazirmatn', Tahoma, sans-serif;
+  color: #1d2939;
+  background: #f6f8fb;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  color: #17243a;
-  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100%;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
   min-height: 100vh;
 }
 
 button,
 input {
   font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid #a9c8ff;
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
 }
