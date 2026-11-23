@@ -1,0 +1,126 @@
+.alerts-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.4s ease;
+}
+
+.count-badge.danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--accent-red);
+}
+
+.alert-summary-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.alert-summary-icon {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--accent-red);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.alert-summary-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.alert-summary-box p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.mil-status {
+  margin-right: auto;
+  background: var(--accent-red);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.dtc-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dtc-list-container h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dtc-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.dtc-card:hover {
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.dtc-card-icon {
+  color: var(--accent-red);
+  background: rgba(239, 68, 68, 0.1);
+  padding: 0.75rem;
+  border-radius: 12px;
+}
+
+.dtc-card-content {
+  flex: 1;
+}
+
+.dtc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.dtc-header h3 {
+  font-size: 1.2rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.dtc-status {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--accent-red);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dtc-card-content p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: var(--bg-card);
+  border: 1px dashed var(--border-color);
+  border-radius: 16px;
+  text-align: center;
+  gap: 1rem;
+}
+
+.text-green { color: var(--accent-green); }

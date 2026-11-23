@@ -1,0 +1,164 @@
+.sensor-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.4s ease;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  width: fit-content;
+}
+
+.back-btn:hover {
+  color: var(--text-main);
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.detail-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sensor-icon-large {
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-title-group h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.detail-title-group p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* گیج */
+.gauge-container {
+  width: 220px;
+}
+
+.gauge-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* کارت‌های آماری */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-box span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.stat-box strong {
+  font-size: 1.5rem;
+}
+
+.stat-box small {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+/* نمودار */
+.chart-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.chart-header h3 {
+  font-size: 1.1rem;
+}
+
+.period-buttons {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--bg-main);
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+.period-buttons button {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.period-buttons button.active {
+  background: var(--bg-card);
+  color: var(--text-main);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .gauge-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
